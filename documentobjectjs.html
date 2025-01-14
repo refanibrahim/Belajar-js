@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Mengakses dan Memanipulasi Element</title>
+    </head>
+    <body>
+        <h1 id="header">Hello PPLG</h1>
+        <p class="description">Ini adalah contoh code program dari Documen Object</p>
+        <button id="changeContent"> Ubah Context</button>
+        <script>
+            //mengakses element menggunakan document object
+            const header = document.getElementById("header");
+            const paragraph = document.querySelector("description");
+            const button = document.getElementById("changeContent");
+
+            //memanipulasi konten element
+            button.addEventListener("click", () => {
+                header.textContent = "Hello Document Object";
+                paragraph.textContent = "Content Telah DI buat oleh document";
+            });
+        </script>
+    </body>
+</html>
